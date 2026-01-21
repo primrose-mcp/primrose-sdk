@@ -1,6 +1,6 @@
 {
   "name": "primrose-mcp",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Primrose SDK for MCP tool integration",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -21,19 +21,34 @@
   "files": [
     "dist"
   ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/primrose-mcp/primrose-sdk.git"
+  },
+  "bugs": {
+    "url": "https://github.com/primrose-mcp/primrose-sdk/issues"
+  },
+  "homepage": "https://github.com/primrose-mcp/primrose-sdk#readme",
   "scripts": {
     "build": "tsup",
     "test": "vitest run",
-    "test:watch": "vitest"
+    "test:watch": "vitest",
+    "prepublishOnly": "pnpm build"
   },
   "keywords": [
     "mcp",
     "primrose",
     "tools",
     "llm",
-    "sdk"
+    "sdk",
+    "anthropic",
+    "openai",
+    "google",
+    "amazon",
+    "meta",
+    "mistral"
   ],
-  "author": "",
+  "author": "Primrose",
   "license": "MIT",
   "devDependencies": {
     "@types/node": "^20.0.0",
